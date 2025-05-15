@@ -1,9 +1,10 @@
 # use python=3.10
-conda create -n simpler python=3.10
-conda activate pcd
+# create a conda environment
+# conda create -n pcd python=3.10
+# conda activate pcd
 
 # install tensorflow
-pip install tensorflow[and-cuda]==2.15.0
+pip install tensorflow[and-cuda]==2.15.1
 pip install git+https://github.com/nathanrooy/simulated-annealing 
 
 # install jax
