@@ -1,8 +1,8 @@
 # Policy Contrastive Decoding
 
-Official implementation of the paper [Policy Contrastive Decoding]().
+Official implementation of the paper "[Policy Contrastive Decoding]()".
 
-Note: We are doing our best to improve this work. If you have any questions or suggestions, please feel free to create an issue in this repo or contact us at shihan.wu.koorye@outlook.com.
+> **Note**: We are doing our best to improve this work. If you have any questions or suggestions, please feel free to create an issue in this repo or contact us at shihan.wu.koorye@outlook.com.
 
 ## News
 
@@ -36,22 +36,35 @@ Note: We are doing our best to improve this work. If you have any questions or s
 
 ![Real-world Factors](examples/real_factors.png)
 
-### Videos
+## Videos
 
-<!-- <center class="half">
-    <img src="examples/videos/pick_coke_can.gif" alt="Pick Coke Can" width="20%"/><img src="examples/videos/move_near.gif" alt="Move Near" width="20%"/><img src="examples/videos/carrot_plate.gif" alt="Carrot Plate" width="20%"/><img src="examples/videos/stack_cube.gif" alt="Stack Cube" width="20%"/>
-</center> -->
-
-#### Simpler
+### Simulated Environments
 
 **Baseline**
 
+| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
+| :-----------: | :-------: | :---------: | :-------: |
+| ![Pick Coke Can](examples/videos/main/simpler/baseline/pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/baseline/move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/baseline/carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/baseline/eggplant_basket.gif) |
 
 **+PCD**
 
-| Pick Coke Can | Move Near | Carrot Plate | Stack Cube |
+| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
 | :-----------: | :-------: | :---------: | :-------: |
-| ![Pick Coke Can](examples/videos/pick_coke_can.gif) | ![Move Near](examples/videos/move_near.gif) | ![Carrot Plate](examples/videos/carrot_plate.gif) | ![Stack Cube](examples/videos/stack_cube.gif) |
+| ![Pick Coke Can](examples/videos/main/simpler/pcd/pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/pcd/move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/pcd/carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/pcd/eggplant_basket.gif) |
+
+### Real-world Environments
+
+**Baseline**
+
+| Pick Ball | Move Near | Banana Plate | Stack Cube |
+| :-------: | :-------: | :---------: | :-------: |
+| ![Pick Ball](examples/videos/main/real/baseline/pick_ball.gif) | ![Move Near](examples/videos/main/real/baseline/move_near.gif) | ![Banana Plate](examples/videos/main/real/baseline/banana_plate.gif) | ![Stack Cube](examples/videos/main/real/baseline/stack_cube.gif) |
+
+**+PCD**
+
+| Pick Ball | Move Near | Banana Plate | Stack Cube |
+| :-------: | :-------: | :---------: | :-------: |
+| ![Pick Ball](examples/videos/main/real/pcd/pick_ball.gif) | ![Move Near](examples/videos/main/real/pcd/move_near.gif) | ![Banana Plate](examples/videos/main/real/pcd/banana_plate.gif) | ![Stack Cube](examples/videos/main/real/pcd/stack_cube.gif) |
 
 ## Running
 

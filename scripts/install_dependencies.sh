@@ -44,8 +44,9 @@ cd ..
 
 # install requirements
 pip install numpy==1.24.4
-pip install -r third_party/SED/requirements.txt
-pip install -r third_party/inpaint_anything/lama/requirements.txt
+pip install -r SED/requirements.txt
+pip install -r inpaint_anything/lama/requirements.txt
+cd ..
 pip install -r requirements_full_install.txt
 
 # reforce the installation of the following packages
