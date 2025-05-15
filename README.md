@@ -12,6 +12,8 @@ Note: We are doing our best to improve this work. If you have any questions or s
 
 > **Abstract** Generalist robot policies, or robotic foundation models, hold immense potential to enable flexible, general-purpose and dexterous robotic systems. Despite their advancements, our empirical experiments reveal that existing robot policies are prone to learning spurious correlations from pre-training trajectories, adversely affecting their generalization capabilities during inference. To tackle this, we propose a novel Policy Contrastive Decoding (PCD) approach, which redirects the robot policy’s focus toward object-relevant visual clues by contrasting action probability distributions derived from original and object-masked visual inputs. As a training-free method, our PCD can be used as a plugin to improve different types of robot policies without needing to finetune or access model weights. We conduct extensive experiments on top of three open-source robot policies, including the autoregressive policy OpenVLA and the diffusion-based policies Octo and Pi-0. The obtained results in both simulation and real-world environments prove PCD’s flexibility and effectiveness, e.g., PCD enhances the state-of-the-art policy Pi-0 by 8% in the simulation environment and by 108% in the real-world environment.
 
+![Policy Contrastive Decoding](examples/method.png)
+
 ## Experiments
 
 ### Overall Performance
@@ -36,7 +38,12 @@ Note: We are doing our best to improve this work. If you have any questions or s
 
 ### Videos
 
-![Pick Coke Can](examples/videos/pick coke can.gif)
+<center class="half">
+    <img src="examples/videos/pick_coke_can.gif" alt="Pick Coke Can" width="20%"/>
+    <img src="examples/videos/move_near.gif" alt="Move Near" width="20%"/>
+    <img src="examples/videos/carrot_plate.gif" alt="Carrot Plate" width="20%"/>
+    <img src="examples/videos/stack_cube.gif" alt="Stack Cube" width="20%"/>
+</center>
 
 ## Running
 
