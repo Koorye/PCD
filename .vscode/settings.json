@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./contrast_utils/inpaint_anything/lama",
+        "./open_pi_zero"
+    ]
+}

@@ -1,0 +1,9 @@
+export XLA_PYTHON_CLIENT_PREALLOCATE=false
+
+bash scripts/inference/default/baseline_octo_inference.sh
+bash scripts/inference/default/baseline_openvla_inference.sh
+bash scripts/inference/default/baseline_pizero_inference.sh
+
+bash scripts/inference/default/contrast_octo_inference.sh
+bash scripts/inference/default/contrast_openvla_inference.sh
+bash scripts/inference/default/contrast_pizero_inference.sh

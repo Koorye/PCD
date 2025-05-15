@@ -1,0 +1,4 @@
+export XLA_PYTHON_CLIENT_PREALLOCATE=false
+
+bash scripts/inference/motivation/baseline_openvla_inference.sh
+bash scripts/inference/motivation/contrast_openvla_inference.sh
