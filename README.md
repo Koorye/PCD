@@ -39,10 +39,7 @@ Note: We are doing our best to improve this work. If you have any questions or s
 ### Videos
 
 <center class="half">
-    <img src="examples/videos/pick_coke_can.gif" alt="Pick Coke Can" width="20%"/>
-    <img src="examples/videos/move_near.gif" alt="Move Near" width="20%"/>
-    <img src="examples/videos/carrot_plate.gif" alt="Carrot Plate" width="20%"/>
-    <img src="examples/videos/stack_cube.gif" alt="Stack Cube" width="20%"/>
+    <img src="examples/videos/pick_coke_can.gif" alt="Pick Coke Can" width="20%"/><img src="examples/videos/move_near.gif" alt="Move Near" width="20%"/><img src="examples/videos/carrot_plate.gif" alt="Carrot Plate" width="20%"/><img src="examples/videos/stack_cube.gif" alt="Stack Cube" width="20%"/>
 </center>
 
 ## Running
