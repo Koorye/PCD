@@ -1,6 +1,6 @@
-# Policy Contrastive Decoding
+# Policy Contrastive Decoding for Robotic Foundation Models
 
-Official implementation of the paper "[Policy Contrastive Decoding](https://arxiv.org/abs/2505.13255)".
+Official implementation of the paper "[Policy Contrastive Decoding for Robotic Foundation Models](https://arxiv.org/abs/2505.13255)".
 
 > **Note**: We are doing our best to improve this work. If you have any questions or suggestions, please feel free to create an issue in this repo or contact us at shihan.wu.koorye@outlook.com.
 
@@ -68,7 +68,13 @@ Official implementation of the paper "[Policy Contrastive Decoding](https://arxi
 
 ## Running
 
-Install all dependencies.
+1. Clone this repository.
+
+```bash
+git clone https://github.com/Koorye/PCD.git
+```
+
+2. Install all dependencies.
 
 ```bash
 conda create -n pcd python=3.10
@@ -76,7 +82,7 @@ conda activate pcd
 bash scripts/install_dependencies.sh
 ```
 
-Running evaluation on simpler.
+3. Running evaluation on simpler.
 
 ```bash
 bash scripts/default/run.sh

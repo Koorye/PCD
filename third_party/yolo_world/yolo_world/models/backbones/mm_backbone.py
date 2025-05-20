@@ -70,7 +70,6 @@ class HuggingCLIPLanguageBackbone(BaseModule):
         self.frozen_modules = frozen_modules
         self.training_use_cache = training_use_cache
         self.add_mask = add_mask
-        model_name = '/home/wushihan/.cache/huggingface/hub/models--openai--clip-vit-base-patch32/snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268'
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         clip_config = CLIPTextConfig.from_pretrained(model_name,
                                                      attention_dropout=dropout)

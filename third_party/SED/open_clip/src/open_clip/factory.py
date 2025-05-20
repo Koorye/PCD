@@ -185,9 +185,7 @@ def create_model(
             checkpoint_path = ''
             pretrained_cfg = get_pretrained_cfg(model_name, pretrained)
             if pretrained_cfg:
-                # checkpoint_path = download_pretrained(pretrained_cfg, cache_dir=cache_dir)
-                # hard code here to avoid downloading
-                checkpoint_path = '/home/wushihan/.cache/huggingface/hub/models--laion--CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/snapshots/654d0f80ff73c58e7281a3ca7dc425589049e2e1/open_clip_pytorch_model.bin'
+                checkpoint_path = download_pretrained(pretrained_cfg, cache_dir=cache_dir)
             elif os.path.exists(pretrained):
                 checkpoint_path = pretrained
 
