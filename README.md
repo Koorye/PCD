@@ -1,12 +1,12 @@
 # Policy Contrastive Decoding
 
-Official implementation of the paper "[Policy Contrastive Decoding]()".
+Official implementation of the paper "[Policy Contrastive Decoding](https://arxiv.org/abs/2505.13255)".
 
 > **Note**: We are doing our best to improve this work. If you have any questions or suggestions, please feel free to create an issue in this repo or contact us at shihan.wu.koorye@outlook.com.
 
 ## News
 
-- [2025/5/15] The code is released.
+- [2025/5/20] The code is released.
 
 ## Introduction
 
