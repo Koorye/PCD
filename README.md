@@ -1,5 +1,7 @@
 # Policy Contrastive Decoding for Robotic Foundation Models
 
+[[Project]](https://Koorye.github.io/proj/PCD/) [[ArXiv]](https://arxiv.org/abs/2505.13255) [[PDF]](https://arxiv.org/pdf/2505.13255)
+
 Official implementation of the paper "[Policy Contrastive Decoding for Robotic Foundation Models](https://arxiv.org/abs/2505.13255)".
 
 > **Note**: We are doing our best to improve this work. If you have any questions or suggestions, please feel free to create an issue in this repo or contact us at shihan.wu.koorye@outlook.com.
@@ -38,20 +40,6 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 
 ## Videos
 
-### Simulated Environments
-
-**Baseline**
-
-| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
-| :-----------: | :-------: | :---------: | :-------: |
-| ![Pick Coke Can](examples/videos/main/simpler/baseline/pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/baseline/move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/baseline/carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/baseline/eggplant_basket.gif) |
-
-**+PCD**
-
-| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
-| :-----------: | :-------: | :---------: | :-------: |
-| ![Pick Coke Can](examples/videos/main/simpler/pcd/pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/pcd/move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/pcd/carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/pcd/eggplant_basket.gif) |
-
 ### Real-world Environments
 
 **Baseline**
@@ -59,12 +47,34 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 | Pick Ball | Move Near | Banana Plate | Stack Cube |
 | :-------: | :-------: | :---------: | :-------: |
 | ![Pick Ball](examples/videos/main/real/baseline/pick_ball.gif) | ![Move Near](examples/videos/main/real/baseline/move_near.gif) | ![Banana Plate](examples/videos/main/real/baseline/banana_plate.gif) | ![Stack Cube](examples/videos/main/real/baseline/stack_cube.gif) |
+| **Distractors** | **Spatial Relation** | **Brightness** | **Texture** |
+| ![Distractors](examples/videos/factor/real/baseline/distractor.gif) | ![Spatial Relation](examples/videos/factor/real/baseline/spatial.gif) | ![Brightness](examples/videos/factor/real/baseline/brightness.gif) | ![Texture](examples/videos/factor/real/baseline/texture.gif) |
 
 **+PCD**
 
 | Pick Ball | Move Near | Banana Plate | Stack Cube |
 | :-------: | :-------: | :---------: | :-------: |
 | ![Pick Ball](examples/videos/main/real/pcd/pick_ball.gif) | ![Move Near](examples/videos/main/real/pcd/move_near.gif) | ![Banana Plate](examples/videos/main/real/pcd/banana_plate.gif) | ![Stack Cube](examples/videos/main/real/pcd/stack_cube.gif) |
+| **Distractors** | **Spatial Relation** | **Brightness** | **Texture** |
+| ![Distractors](examples/videos/factor/real/pcd/distractor.gif) | ![Spatial Relation](examples/videos/factor/real/pcd/spatial.gif) | ![Brightness](examples/videos/factor/real/pcd/brightness.gif) | ![Texture](examples/videos/factor/real/pcd/texture.gif) |
+
+### Simulated Environments
+
+**Baseline**
+
+| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
+| :-----------: | :-------: | :---------: | :-------: |
+| ![Pick Coke Can](examples/videos/main/simpler/baseline/pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/baseline/move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/baseline/carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/baseline/eggplant_basket.gif) |
+| **Spatial Relation** | **Brightness** | **Texture** | **Texture** |
+| ![Spatial Relation](examples/videos/factor/simpler/baseline/spatial.gif) | ![Brightness](examples/videos/factor/simpler/baseline/brightness.gif) | ![Texture](examples/videos/factor/simpler/baseline/texture.gif) | ![Distractors](examples/videos/factor/simpler/baseline/texture2.gif) |
+
+**+PCD**
+
+| Pick Coke Can | Move Near | Carrot Plate | Eggplant Basket |
+| :-----------: | :-------: | :---------: | :-------: |
+| ![Pick Coke Can](examples/videos/main/simpler/pcd/cut_pick_coke_can.gif) | ![Move Near](examples/videos/main/simpler/pcd/cut_move_near.gif) | ![Carrot Plate](examples/videos/main/simpler/pcd/cut_carrot_plate.gif) | ![Stack Cube](examples/videos/main/simpler/pcd/cut_eggplant_basket.gif) |
+| **Spatial Relation** | **Brightness** | **Texture** | **Texture** |
+| ![Spatial Relation](examples/videos/factor/simpler/pcd/cut_spatial.gif) | ![Brightness](examples/videos/factor/simpler/pcd/cut_brightness.gif) | ![Texture](examples/videos/factor/simpler/pcd/cut_texture.gif) | ![Distractors](examples/videos/factor/simpler/pcd/cut_texture2.gif) |
 
 ## Running
 
