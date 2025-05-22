@@ -12,7 +12,7 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 
 ## Introduction
 
-> **Abstract** Generalist robot policies, or robotic foundation models, hold immense potential to enable flexible, general-purpose and dexterous robotic systems. Despite their advancements, our empirical experiments reveal that existing robot policies are prone to learning spurious correlations from pre-training trajectories, adversely affecting their generalization capabilities during inference. To tackle this, we propose a novel Policy Contrastive Decoding (PCD) approach, which redirects the robot policy’s focus toward object-relevant visual clues by contrasting action probability distributions derived from original and object-masked visual inputs. As a training-free method, our PCD can be used as a plugin to improve different types of robot policies without needing to finetune or access model weights. We conduct extensive experiments on top of three open-source robot policies, including the autoregressive policy OpenVLA and the diffusion-based policies Octo and Pi-0. The obtained results in both simulation and real-world environments prove PCD’s flexibility and effectiveness, e.g., PCD enhances the state-of-the-art policy Pi-0 by 8% in the simulation environment and by 108% in the real-world environment.
+> **Abstract** Generalist robot policies, or robotic foundation models, hold immense potential to enable flexible, general-purpose and dexterous robotic systems. Despite their advancements, our empirical experiments reveal that existing robot policies are prone to learning spurious correlations from pre-training trajectories, adversely affecting their generalization capabilities during inference. To tackle this, we propose a novel **Policy Contrastive Decoding (PCD)** approach, which redirects the robot policy’s focus toward object-relevant visual clues by contrasting action probability distributions derived from original and object-masked visual inputs. As a training-free method, our PCD can be used as a *plugin* to improve different types of robot policies without needing to finetune or access model weights. We conduct extensive experiments on top of three open-source robot policies, including the autoregressive policy **OpenVLA** and the diffusion-based policies **Octo** and $\pi_0$. The obtained results in both simulation and real-world environments prove PCD’s flexibility and effectiveness, e.g., PCD enhances the state-of-the-art policy $\pi_0$ by **8%** in the simulation environment and by **108%** in the real-world environment.
 
 ![Policy Contrastive Decoding](examples/method.png)
 
@@ -20,23 +20,17 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 
 ### Overall Performance
 
-**Simpler**
+**Simulated Environments**
 
 ![Simpler Results](examples/simpler_results.png)
 
-**Real-world**
+**Real-world Environments**
 
 ![Real-world Results](examples/real_results.png)
 
 ### Performance on Different Factors
 
-**Simpler**
-
-![Simpler Factors](examples/simpler_factors.png)
-
-**Real-world**
-
-![Real-world Factors](examples/real_factors.png)
+![Factors](examples/factors.png)
 
 ## Videos
 
@@ -81,7 +75,7 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/Koorye/PCD.git
+git clone https://github.com/pcd-robot/PCD.git
 ```
 
 2. Install all dependencies.
