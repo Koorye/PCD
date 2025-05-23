@@ -8,8 +8,8 @@ Official implementation of the paper "[Policy Contrastive Decoding for Robotic F
 
 ## News
 
-- 🔥May 23, 2025: Our paper has been updated for better clarity and readability. The optimized version is now available on arXiv.
-- 🔥May 20, 2025: The code is released and the paper is now available on arXiv.
+- 🔥**May 23, 2025**: Our paper has been updated for **better clarity and readability**. The optimized version is now available on arXiv.
+- 🔥**May 20, 2025**: The code is released and the paper is now available on arXiv.
 
 ## Introduction
 
