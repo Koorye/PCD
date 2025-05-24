@@ -9,6 +9,8 @@ visualize/*
 visualization/*
 dataset/*
 segmentation_results/*
+*plot_simpler*
+*.mp4
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
