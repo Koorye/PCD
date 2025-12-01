@@ -10,7 +10,7 @@ export default {
         muted: true,
         sources: [
           {
-            src: '/PCD.mp4',
+            src: 'overview.mp4',
             type: 'video/mp4'
           }
         ],
@@ -35,7 +35,7 @@ export default {
         <!-- local -->
         <el-container class="video-container">
           <video autoplay controls>
-            <source src="/PCD.mp4" type="video/mp4">
+            <source src="/overview.mp4" type="video/mp4">
           </video>
         </el-container>
       </el-col>
