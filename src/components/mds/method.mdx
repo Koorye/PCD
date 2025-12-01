@@ -1,0 +1,12 @@
+**Overview.** PCD serves as a *plugin* to redirect the robot policy's focus toward object-relevant visual cues by contrasting action probability distributions derived from original observations $p$ and object-masked observations $\hat{p}$.
+
+Given the current visual observation $\boldsymbol{o}_i$ and the language command $\ell$, we first generate two distinct action probability distributions of $\boldsymbol{a}_i$: 
+one is $\pi_\theta(\boldsymbol{a}_i|l,\boldsymbol{o}_i)$ conditioned on the *original* visual input $\boldsymbol{o}_i$ and the other is $\pi_\theta(\boldsymbol{a}_i|l,\hat{\boldsymbol{o}}_i)$ conditioned on *object-masked* counterpart $\hat{\boldsymbol{o}}_i$ that removes all task-relevant factors related to target objects.
+Then, a new contrastive action probability distribution $\pi_\theta^{*}(\boldsymbol{a}_i|l,\boldsymbol{o}_i)$ is obtained by contrasting $\pi_\theta(\boldsymbol{a}_i|l,\boldsymbol{o}_i)$ and $\pi_\theta(\boldsymbol{a}_i|l,\hat{\boldsymbol{o}}_i)$:
+
+$$
+\pi_\theta^{*}(\boldsymbol{a}_i|l,\boldsymbol{o}_i)  =  \frac{1}{C}\cdot \pi_\theta(\boldsymbol{a}_i|l,\boldsymbol{o}_i)\left(\frac{\pi_\theta(\boldsymbol{a}_i|l,\boldsymbol{o}_i)}{\pi_\theta(\boldsymbol{a}_i|l,\hat{\boldsymbol{o}}_i)}\right)^{\alpha},
+$$
+
+where $C$ is a normalization constant and a larger value of $\alpha\ge0 $ indicates a stronger amplification of differences between the two distributions. Particularly, $\alpha=0$ recovers the baseline policy. 
+In such a manner, the obtained $p_t^{*}$ amplifies model predictions on object-relevant features in $\boldsymbol{u}$, thus exhibiting insensitivity to spurious features in $\boldsymbol{v}$.
