@@ -86,6 +86,7 @@ const addresses = [
 const con_and_corresponding_author = "*Equal Contribution  †Corresponding author"
 
 const news = [
+  "🔥Nov 20, 2025: LeRobot Version of PCD is now available on GitHub.",
   "🔥May 23, 2025: Our paper has been updated for better clarity and readability. The optimized version is now available on arXiv.",
   "🔥May 20, 2025: The paper is now available on arXiv."
 ]
