@@ -25,7 +25,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/proj/PCD/',
+  base:'/PCD/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
