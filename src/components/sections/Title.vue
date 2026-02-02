@@ -29,14 +29,14 @@ const authors = [
     address_flag: "1*"
   },
   {
-    name: "Ji Zhang",
-    homepage: "https://github.com",
-    address_flag: "2*"
-  },
-  {
     name: "Xu Luo",
     homepage: "https://github.com",
-    address_flag: "1"
+    address_flag: "1*"
+  },
+  {
+    name: "Ji Zhang",
+    homepage: "https://github.com",
+    address_flag: "2†"
   },
   {
     name: "Junlin Xie",
@@ -56,7 +56,7 @@ const authors = [
   {
     name: "Lianli Gao",
     homepage: "https://github.com",
-    address_flag: "1†"
+    address_flag: "1"
   },
 ]
 
