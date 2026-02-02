@@ -5,7 +5,7 @@ export default {
       bibtex: [
         "@article{wu2025policy,",
         "    title={Policy Contrastive Decoding for Robotic Foundation Models},",
-        "    author={Wu, Shihan and Zhang, Ji and Luo, Xu and Xie, Junlin and Song, Jingkuan and Shen, Heng Tao and Gao, Lianli},",
+        "    author={Wu, Shihan and Luo, Xu and Zhang, Ji and Xie, Junlin and Song, Jingkuan and Shen, Heng Tao and Gao, Lianli},",
         "    journal={arXiv preprint arXiv:2505.13255},",
         "    year={2025}",
         "}",
