@@ -18,7 +18,10 @@ import experiment from '../mds/experiment_real.mdx';
 <style scoped>
 
 .caption-img {
-    width: 98%;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--pcd-border);
+    box-shadow: var(--pcd-shadow-soft);
 }
 
 .caption-text {

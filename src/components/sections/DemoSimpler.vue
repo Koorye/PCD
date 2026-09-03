@@ -93,10 +93,13 @@ export default {
 </script>
 
 <template>
-  <!-- <el-divider /> -->
+  <div v-animate-onscroll="'animated fadeInUp'">
+    <el-row justify="center">
+      <h1>Simulation Demonstrations (SIMPLER)</h1>
+    </el-row>
 
-  <el-row class="swiper-box" justify="center" v-animate-onscroll="'animated fadeInUp'">
-    <el-col :xs="32" :sm="28" :md="24" :lg="20" :xl="16">
+    <el-row justify="center">
+    <el-col :xs="28" :sm="24" :md="20" :lg="16" :xl="12" class="swiper-box">
       <!-- 设置轮播图：循环播放、首张图序号、响应式、导航和分页、自动播放 -->
       <swiper
         :loop="true"
@@ -166,30 +169,39 @@ export default {
       </swiper>
     </el-col>
   </el-row>
+  </div>
 </template>
-  
+
 <style>
 
 /* 设置Swiper风格 */
 .swiper-box {
-  background-color: #eeeeee;
-  padding-top: 20px;
+  background-color: var(--pcd-surface);
+  border: 1px solid var(--pcd-border);
+  border-radius: 16px;
+  padding: 18px 14px;
 }
 
 .swiper {
-  --swiper-theme-color: white;
+  --swiper-theme-color: var(--pcd-accent);
 }
 
 .swiper-slide-text {
-  color: black;
+  color: var(--pcd-text);
   padding: 5px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
   text-align: center;
 }
 
 .swiper-slide-img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 12px;
+}
+
+/* 分页圆点颜色 */
+.swiper-box .swiper-pagination-bullet-active {
+  background: var(--pcd-accent);
 }
 
 </style>

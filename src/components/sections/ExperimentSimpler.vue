@@ -3,9 +3,7 @@ import experiment from '../mds/experiment_simpler.mdx';
 </script>
 
 <template>
-  <div v-animate-onscroll="'animated fadeInUp'">
-    <el-divider />
-
+  <div id="experiments" v-animate-onscroll="'animated fadeInUp'">
     <el-row justify="center">
         <el-col :xs="28" :sm="24" :md="20" :lg="16" :xl="12">
             <h1 class="title">Experiment</h1>
@@ -26,6 +24,9 @@ import experiment from '../mds/experiment_simpler.mdx';
 .caption-img {
     width: 100%;
     margin: 0;
+    border-radius: 12px;
+    border: 1px solid var(--pcd-border);
+    box-shadow: var(--pcd-shadow-soft);
 }
 
 .caption-text {

@@ -1,28 +1,14 @@
 <script>
+// public 目录资源需用 BASE_URL 拼接，避免部署到 /PCD/ 子路径后 404
+const videoSrc = import.meta.env.BASE_URL + 'videos/overview.mp4'
+
 export default {
   name: 'Video',
   data() {
     return {
-      playerOptions: {
-        autoplay: true,
-        controls: true,
-        loop: true,
-        muted: true,
-        sources: [
-          {
-            src: '/videos/overview.mp4',
-            type: 'video/mp4'
-          }
-        ],
-        plugins: {
-          // 这里可以添加其他插件配置
-        }
-      }
+      videoSrc,
     };
   },
-  mounted() {
-    // 如果需要在组件挂载后执行一些操作，可以在这里添加
-  }
 };
 </script>
 
@@ -34,9 +20,7 @@ export default {
 
         <!-- local -->
         <el-container class="video-container">
-          <video autoplay controls>
-            <source src="/videos/overview.mp4" type="video/mp4">
-          </video>
+          <video autoplay controls loop muted :src="videoSrc"></video>
         </el-container>
       </el-col>
     </el-row>
@@ -45,13 +29,18 @@ export default {
 
 <style scoped>
 
-.video-container{
-  margin: 20px;
+.video-container {
+  margin: 24px 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--pcd-border);
+  box-shadow: var(--pcd-shadow-soft);
 }
 
 iframe, video {
   aspect-ratio: 16 / 9;
   width: 100%;
+  display: block;
 }
 
 </style>

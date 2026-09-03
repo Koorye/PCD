@@ -3,7 +3,7 @@ import abstract from '../mds/abstract.mdx';
 </script>
 
 <template>
-  <div class="abstract-box" v-animate-onscroll="'animated fadeInUap'">
+  <div id="abstract" class="abstract-box" v-animate-onscroll="'animated fadeInUp'">
     <!-- <el-divider /> -->
 
     <el-row justify="center">
